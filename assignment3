@@ -1,0 +1,303 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "ba8c12b6-129a-4e59-844c-100d054464a2",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Output of while loop\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "Output of for loop\n",
+      "0\n",
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q1:- Ans\n",
+    "# While Loop:-\n",
+    "    # Python while loop is used to run a block code until a certain condition is met.\n",
+    "    # Here, A while loop evaluates the condition. If the condition evaluates to True , the \n",
+    "    # code inside the while loop is executed.\n",
+    "    # OR in simple word when we don't know how many time the loop will executed that time is used to while loop.\n",
+    "#EXample of while \n",
+    "i = 1\n",
+    "print(\"Output of while loop\")\n",
+    "while i < 6:\n",
+    "  print(i)\n",
+    "  i += 1\n",
+    "# For loop:-\n",
+    "  # A for loop is a repetition control structure that allows you to efficiently write a loop that\n",
+    "  # needs to execute a specific number of times.\n",
+    "#OR in simple word we can say that when we how many time the loop will executed.then for loop is used.\n",
+    "#Example of for loop:-\n",
+    "values = range(6)\n",
+    "print(\"Output of for loop\")\n",
+    "# iterate from i = 0 to i = 3\n",
+    "for i in values:\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "a1c0f84f-0db3-49a2-b5a7-bc29904d5489",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Using While Loop\n",
+      "Sum  of 1 to 10 natural number =  55\n",
+      "Product of 1 to 10 natural number =  3628800\n",
+      "Using For Loop\n",
+      "Sum  of 1 to 10 natural number =  55\n",
+      "Product of 1 to 10 natural number =  3628800\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q2:- Ans \n",
+    "# using while loop\n",
+    "sum=0\n",
+    "prod=1\n",
+    "i=1\n",
+    "while  i <= 10 :\n",
+    "    sum=sum+i\n",
+    "    prod=prod*i\n",
+    "    i=i+1\n",
+    "print(\"Using While Loop\")\n",
+    "print(\"Sum  of 1 to 10 natural number = \",sum)\n",
+    "print(\"Product of 1 to 10 natural number = \",prod)\n",
+    "# using for loop\n",
+    "sum=0\n",
+    "prod=1\n",
+    "for i in range(1,11) :\n",
+    "     sum=sum+i\n",
+    "     prod=prod*i\n",
+    "     i=i+1\n",
+    "print(\"Using For Loop\")\n",
+    "print(\"Sum  of 1 to 10 natural number = \",sum)\n",
+    "print(\"Product of 1 to 10 natural number = \",prod)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "3f0a62cb-4737-4bdf-bc35-113880f67853",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      "Please Enter the electricity consumed in a month : 310\n"
+     ]
+    },
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "total payable amount= 2250.0\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q3:-Ans\n",
+    "unit=int(input(\"Please Enter the electricity consumed in a month :\"))\n",
+    "pay_amount=0\n",
+    "if unit > 0 : \n",
+    "    if unit >= 300 :\n",
+    "        temp=unit-300\n",
+    "        unit=unit-temp\n",
+    "        pay_amount=pay_amount+temp*20 \n",
+    "    if unit>=200 :\n",
+    "        temp=unit-200\n",
+    "        unit=unit-temp\n",
+    "        pay_amount=pay_amount+temp*10\n",
+    "    if unit>=100 :\n",
+    "        temp=unit-100\n",
+    "        unit=unit-temp\n",
+    "        pay_amount=pay_amount+temp*6 \n",
+    "\n",
+    "    pay_amount=pay_amount+unit*4.5 \n",
+    "    print(\"total payable amount=\",pay_amount)  \n",
+    "else :\n",
+    "    print(\"Enter  valid electricity consumed unit\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "id": "5bf0cb5f-9e68-4467-aefc-f37a681860c1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8\n",
+      "64\n",
+      "125\n",
+      "216\n",
+      "512\n",
+      "1000\n",
+      "1728\n",
+      "2744\n",
+      "3375\n",
+      "4096\n",
+      "5832\n",
+      "8000\n",
+      "10648\n",
+      "13824\n",
+      "15625\n",
+      "17576\n",
+      "21952\n",
+      "27000\n",
+      "32768\n",
+      "39304\n",
+      "42875\n",
+      "46656\n",
+      "54872\n",
+      "64000\n",
+      "74088\n",
+      "85184\n",
+      "91125\n",
+      "97336\n",
+      "110592\n",
+      "125000\n",
+      "140608\n",
+      "157464\n",
+      "166375\n",
+      "175616\n",
+      "195112\n",
+      "216000\n",
+      "238328\n",
+      "262144\n",
+      "274625\n",
+      "287496\n",
+      "314432\n",
+      "343000\n",
+      "373248\n",
+      "405224\n",
+      "421875\n",
+      "438976\n",
+      "474552\n",
+      "512000\n",
+      "551368\n",
+      "592704\n",
+      "614125\n",
+      "636056\n",
+      "681472\n",
+      "729000\n",
+      "778688\n",
+      "830584\n",
+      "857375\n",
+      "884736\n",
+      "941192\n",
+      "1000000\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q4:-Ans\n",
+    "lst=range(1,101)\n",
+    "ans=[]\n",
+    "# using for loop\n",
+    "for i in lst :\n",
+    "    cube=i**3\n",
+    "    if cube % 4 == 0 or cube % 5 == 0 :\n",
+    "           ans.append(cube)            \n",
+    "for i in ans :\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "615af034-a151-4660-96e7-e4a6d63e9f52",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Q4:-Ans\n",
+    "#using while loop\n",
+    "lst=range(1,101)\n",
+    "i=1\n",
+    "ans1=[]\n",
+    "while i <= 100 :\n",
+    "    cube=i**3\n",
+    "    if cube % 4 == 0 or cube % 5 == 0 :\n",
+    "           ans1.append(cube)\n",
+    "for i in ans1 :\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "3ef8886a-fd93-4727-b5c4-f0d8d935ab54",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "total vowels letter in a string is  12\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q5:- Ans\n",
+    "string = \"I want to become a data scientist\"\n",
+    "count=0\n",
+    "for i in string :\n",
+    "    if (i=='a' or i=='e' or i=='i' or i=='o' or i=='u') or (i=='A' or i=='E' or i=='I' or i=='O' or i=='U') :\n",
+    "        count+=1\n",
+    "print(\"total vowels letter in a string is \",count)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "46048e06-17e0-4603-a24c-502db621e002",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.6"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
